@@ -303,6 +303,7 @@ PRODUCT_PACKAGES += \
     tcpdump \
     wcnss_service \
     WCNSS_wlan_dictionary.dat \
+    wificond \
     wpa_supplicant \
     wpa_supplicant.conf \
     p2p_supplicant_overlay.conf \
