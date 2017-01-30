@@ -73,6 +73,9 @@ PRODUCT_PACKAGES += \
     libbson \
     Snap
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    camera.disable_treble=true
+
 # Motorola Camera permissions
 PRODUCT_COPY_FILES += \
     device/motorola/athene/configs/com.motorola.camera.xml:system/etc/permissions/com.motorola.camera.xml \
