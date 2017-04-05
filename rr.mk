@@ -30,6 +30,9 @@ DEVICE_PACKAGE_OVERLAYS += \
     device/motorola/athene/overlay \
     device/motorola/athene/overlay-lineage
 
+PRODUCT_ENFORCE_RRO_TARGETS := \
+    framework-res
+
 ## Device identifiers
 PRODUCT_DEVICE := athene
 PRODUCT_NAME := rr_athene
