@@ -99,6 +99,10 @@ PRODUCT_COPY_FILES += \
     device/motorola/athene/display/pp_calib_data_mipi_mot_cmd_boe_1080p_546_v0.xml:system/etc/pp_calib_data_mipi_mot_cmd_boe_1080p_546_v0.xml \
     device/motorola/athene/display/pp_calib_data_mipi_mot_cmd_lgd_1080p_546_v0.xml:system/etc/pp_calib_data_mipi_mot_cmd_lgd_1080p_546_v0.xml \
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service \
