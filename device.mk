@@ -298,12 +298,11 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     hostapd \
     libcurl \
-    libqsap_sdk \
-    libQWiFiSoftApCfg \
     tcpdump \
     wcnss_service \
     WCNSS_wlan_dictionary.dat \
     wificond \
+    wifilogd \
     wpa_supplicant \
     wpa_supplicant.conf \
     p2p_supplicant_overlay.conf \
