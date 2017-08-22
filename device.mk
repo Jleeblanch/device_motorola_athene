@@ -308,6 +308,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/motorola/athene/configs/thermal-engine-athene.conf:system/etc/thermal-engine-athene.conf
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service
+
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl
