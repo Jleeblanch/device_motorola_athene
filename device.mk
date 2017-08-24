@@ -267,7 +267,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcnefeatureconfig \
     librmnetctl \
-    libxml2
+    libxml2 \
+    rild_socket
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
