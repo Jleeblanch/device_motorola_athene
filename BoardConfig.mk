@@ -39,8 +39,8 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8952
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := msm8952
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno405
-TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
-TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
+BOARD_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
+BOARD_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
 ENABLE_CPUSETS := true
 ENABLE_SCHED_BOOST := true
