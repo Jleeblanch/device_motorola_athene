@@ -117,7 +117,8 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
     gps.msm8952 \
-    libgnsspps
+    libgnsspps \
+    libshims_get_process_name
 
 PRODUCT_COPY_FILES += \
     device/motorola/athene/gps/etc/flp.conf:system/etc/flp.conf \
