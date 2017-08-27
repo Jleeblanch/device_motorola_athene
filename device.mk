@@ -249,7 +249,6 @@ PRODUCT_COPY_FILES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
-    hostapd_default.conf \
     hostapd \
     libcurl \
     libqsap_sdk \
