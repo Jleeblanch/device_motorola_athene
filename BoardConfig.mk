@@ -152,10 +152,6 @@ TARGET_POWERHAL_VARIANT := qcom
 # Properties
 TARGET_SYSTEM_PROP += device/motorola/athene/system.prop
 
-# RIL
-BOARD_PROVIDES_RILD := true
-BOARD_PROVIDES_LIBRIL := true
-
 # SDClang
 TARGET_USE_SDCLANG := true
 
