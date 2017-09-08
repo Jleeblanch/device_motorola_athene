@@ -149,6 +149,10 @@ PRODUCT_COPY_FILES += \
     device/motorola/athene/keylayout/synaptics_dsx.kl:system/usr/keylayout/synaptics_dsx.kl \
     device/motorola/athene/keylayout/synaptics_rmi4_i2c.kl:system/usr/keylayout/synaptics_rmi4_i2c.kl
 
+# Keymaster HAL
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0-impl
+
 # Keystore
 PRODUCT_PACKAGES += \
     keystore.msm8952
