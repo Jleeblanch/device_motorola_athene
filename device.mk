@@ -126,6 +126,10 @@ PRODUCT_COPY_FILES += \
     device/motorola/athene/gps/etc/sap.conf:system/etc/sap.conf \
     device/motorola/athene/gps/etc/xtwifi.conf:system/etc/xtwifi.conf
 
+# HIDL
+PRODUCT_COPY_FILES += \
+    device/motorola/athene/manifest.xml:system/vendor/manifest.xml
+
 # IMS
 PRODUCT_PACKAGES += \
     libshims_ims
