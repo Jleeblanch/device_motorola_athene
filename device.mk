@@ -236,6 +236,9 @@ PRODUCT_PACKAGES += \
     libxml2
 
 # Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl
+
 PRODUCT_COPY_FILES += \
     device/motorola/athene/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
     device/motorola/athene/sensors/hals.conf:system/etc/sensors/hals.conf
