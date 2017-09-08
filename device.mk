@@ -100,6 +100,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 # GPS
 PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl \
     gps.msm8952 \
     libgnsspps
 
