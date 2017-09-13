@@ -302,6 +302,7 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     hostapd \
     libcurl \
+    libwpa_client \
     tcpdump \
     wcnss_service \
     WCNSS_wlan_dictionary.dat \
