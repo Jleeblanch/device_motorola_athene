@@ -81,10 +81,6 @@ PRODUCT_COPY_FILES += \
     device/motorola/athene/configs/com.motorola.camera.xml:system/etc/permissions/com.motorola.camera.xml \
     device/motorola/athene/configs/com.motorola.cameraone.xml:system/etc/permissions/com.motorola.cameraone.xml
 
-# CMActions
-PRODUCT_PACKAGES += \
-    CMActions
-
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
@@ -196,6 +192,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
     lights.msm8952
+
+# LineageActions
+PRODUCT_PACKAGES += \
+    LineageActions
 
 # LiveDisplay native
 PRODUCT_PACKAGES += \
