@@ -26,7 +26,9 @@ $(call inherit-product-if-exists, vendor/motorola/athene/athene-vendor.mk)
 $(call inherit-product, device/motorola/athene/device.mk)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += device/motorola/athene/overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    device/motorola/athene/overlay \
+    device/motorola/athene/overlay-lineage
 
 ## Device identifiers
 PRODUCT_DEVICE := athene
