@@ -40,9 +40,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES +=  \
     device/motorola/athene/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf \
-    device/motorola/athene/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml \
-    device/motorola/athene/audio/audio_policy.conf:system/etc/audio_policy.conf \
-    device/motorola/athene/audio/mixer_paths.xml:system/etc/mixer_paths.xml \
+    device/motorola/athene/audio/audio_platform_info.xml:system/vendor/etc/audio_platform_info.xml \
+    device/motorola/athene/audio/audio_policy.conf:system/vendor/etc/audio_policy.conf \
+    device/motorola/athene/audio/mixer_paths.xml:system/vendor/etc/mixer_paths.xml \
     device/motorola/athene/audio/audio_output_policy.conf:system/vendor/etc/audio_output_policy.conf \
     device/motorola/athene/audio/ap_gain.bin:system/etc/ap_gain.bin \
     device/motorola/athene/audio/ap_gain_mmul.bin:system/etc/ap_gain_mmul.bin \
