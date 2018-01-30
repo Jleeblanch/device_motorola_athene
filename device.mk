@@ -81,6 +81,10 @@ PRODUCT_COPY_FILES += \
     device/motorola/athene/configs/com.motorola.camera.xml:system/etc/permissions/com.motorola.camera.xml \
     device/motorola/athene/configs/com.motorola.cameraone.xml:system/etc/permissions/com.motorola.cameraone.xml
 
+# Disable Vulkan
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.graphics.vulkan.disable=true
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
