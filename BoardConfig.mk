@@ -164,6 +164,23 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 # Sensors
 USE_SENSOR_MULTI_HAL := true
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /system/lib/libandroid.so|libshim_ril.so \
+    /system/lib/libjustshoot.so|libshims_camera.so \
+    /system/lib/libmot_sensorlistener.so|libsensor.so \
+    /system/vendor/lib/lib-imsvt.so|libshims_ims.so \
+    /system/vendor/lib/libizat_core.so|libshims_get_process_name.so \
+    /system/vendor/lib/libril-qc-qmi-1.so|rild_socket.so \
+    /system/vendor/lib/libmmcamera_imglib.so|libsensor.so \
+    /system/vendor/lib/libmmcamera2_iface_modules.so|libsensor.so \
+    /system/vendor/lib/libmmcamera2_imglib_modules.so|libsensor.so \
+    /system/vendor/lib/libmmcamera2_mct.so|libsensor.so \
+    /system/vendor/lib/libmmcamera2_pproc_modules.so|libsensor.so \
+    /system/vendor/lib/libmmcamera2_q3a_core.so|libsensor.so \
+    /system/vendor/lib/libmmcamera2_sensor_modules.so|libsensor.so \
+    /system/vendor/lib/libmmcamera2_stats_modules.so|libsensor.so
+
 # Timeservice
 BOARD_USES_QC_TIME_SERVICES := true
 
