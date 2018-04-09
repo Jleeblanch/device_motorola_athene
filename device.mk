@@ -174,11 +174,11 @@ PRODUCT_COPY_FILES += \
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
-    device/motorola/athene/keylayout/fpc1020.kl:system/usr/keylayout/fpc1020.kl \
-    device/motorola/athene/keylayout/ft5x06_ts.kl:system/usr/keylayout/ft5x06_ts.kl \
-    device/motorola/athene/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-    device/motorola/athene/keylayout/synaptics_dsx.kl:system/usr/keylayout/synaptics_dsx.kl \
-    device/motorola/athene/keylayout/synaptics_rmi4_i2c.kl:system/usr/keylayout/synaptics_rmi4_i2c.kl
+    device/motorola/athene/keylayout/fpc1020.kl:system/vendor/usr/keylayout/fpc1020.kl \
+    device/motorola/athene/keylayout/ft5x06_ts.kl:system/vendor/usr/keylayout/ft5x06_ts.kl \
+    device/motorola/athene/keylayout/gpio-keys.kl:system/vendor/usr/keylayout/gpio-keys.kl \
+    device/motorola/athene/keylayout/synaptics_dsx.kl:system/vendor/usr/keylayout/synaptics_dsx.kl \
+    device/motorola/athene/keylayout/synaptics_rmi4_i2c.kl:system/vendor/usr/keylayout/synaptics_rmi4_i2c.kl
 
 # Keymaster HAL
 PRODUCT_PACKAGES += \
