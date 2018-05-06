@@ -16,16 +16,23 @@
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-$(call inherit-product, device/motorola/athene/full_athene.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# Boot animation
-TARGET_SCREEN_WIDTH := 1080
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_BOOTANIMATION_HALF_RES := true
+# Vendor blobs
+$(call inherit-product-if-exists, vendor/motorola/athene/athene-vendor.mk)
 
-## Device identifier. This must come after all inclusions
+# Device
+$(call inherit-product, device/motorola/athene/device.mk)
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += device/motorola/athene/overlay
+
+## Device identifiers
 PRODUCT_DEVICE := athene
 PRODUCT_NAME := lineage_athene
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := athene
+
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
