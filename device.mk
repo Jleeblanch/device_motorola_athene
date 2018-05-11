@@ -76,11 +76,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_treble=true
 
-# Motorola Camera permissions
-PRODUCT_COPY_FILES += \
-    device/motorola/athene/configs/com.motorola.camera.xml:system/etc/permissions/com.motorola.camera.xml \
-    device/motorola/athene/configs/com.motorola.cameraone.xml:system/etc/permissions/com.motorola.cameraone.xml
-
 # Disable Vulkan
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.graphics.vulkan.disable=true

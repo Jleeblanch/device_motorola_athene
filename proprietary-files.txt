@@ -79,6 +79,8 @@ vendor/lib/libbtnv.so
 
 # Camera
 bin/mm-qcamera-daemon
+etc/permissions/com.motorola.camera.xml
+etc/permissions/com.motorola.cameraone.xml
 lib/hw/camera.msm8952.so
 lib/libcamerabgproc-jni.so
 lib/libcamerabgprocservice.so
