@@ -74,14 +74,13 @@ etc/firmware/rampatch_tlv_2.1.tlv
 etc/firmware/rampatch_tlv_3.0.tlv
 etc/firmware/rampatch_tlv_3.2.tlv
 lib/libbt-aptX-ARM-4.2.2.so
-vendor/lib/libbt-vendor.so
 vendor/lib/libbtnv.so
 
 # Camera
 bin/mm-qcamera-daemon
 etc/permissions/com.motorola.camera.xml
 etc/permissions/com.motorola.cameraone.xml
-lib/hw/camera.msm8952.so
+lib/hw/camera.vendor.msm8952.so:system/lib/hw/camera.msm8952
 lib/libcamerabgproc-jni.so
 lib/libcamerabgprocservice.so
 lib/libmm-qcamera.so
@@ -663,7 +662,7 @@ vendor/lib/liboemcrypto.so
 
 # Fingerprint
 bin/fingerprintd
-lib/hw/fingerprint.msm8952.so:lib/hw/fingeprint.vendor.msm8952.so
+lib/hw/fingerprint.msm8952.so:system/vendor/lib/hw/fingeprint.vendor.msm8952.so
 lib/libcom_fingerprints_service.so
 
 # Firmware
@@ -832,6 +831,7 @@ vendor/lib/libwfdcommonutils.so
 lib/libadropbox.so
 lib/libadvalgcore.so
 lib/libbabysit.so
+lib/libbson.so
 lib/libcce-socketjni.so
 lib/libipanat.so
 lib/libjscore.so
@@ -848,6 +848,8 @@ lib/libslpc.so
 lib/libvpplibrary.so
 lib/lib_fpc_tac_shared.so
 lib/lib_mottof.so
+lib/libsu.so
+lib/libsui.so
 vendor/bin/mm-pp-daemon
 vendor/bin/perfd
 vendor/bin/seemp_healthd
@@ -882,6 +884,7 @@ vendor/lib/libmodalityservice_jni.so
 vendor/lib/libois_lc898122.so
 vendor/lib/liboptizoom.so
 vendor/lib/libqisl.so
+vendor/lib/librmnetctl.so
 vendor/lib/librpmb.so
 vendor/lib/libseemore.so
 vendor/lib/libsettings.so
@@ -920,6 +923,7 @@ lib/libmotocare.so
 lib/libmoto_netutil.so
 lib/libmot_lux_standardization.so
 vendor/lib/libmotocalibration.so
+vendor/lib/libprotobuf-cpp-moto.so
 
 # Network
 bin/port-bridge
@@ -957,6 +961,7 @@ etc/permissions/qcnvitems.xml
 etc/permissions/qcrilhook.xml
 lib/libmot-qc-fd-offline.so
 lib/libnfnetlink.so
+lib/libqsap_sdk.so
 lib/librilqmiservices.so
 vendor/lib/libqc-opt.so
 vendor/lib/libqcci_legacy.so
@@ -1004,6 +1009,8 @@ lib/libqcomfm_jni.so
 lib/libqmimotext.so
 lib/soundfx/libqcomvisualizer.so
 lib/soundfx/libqcomvoiceprocessing.so
+-lib/vendor.qti.hardware.fm@1.0.so
+vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib/libdataitems.so
 vendor/lib/libDevHealth.so
 vendor/lib/libdiag.so
@@ -1018,6 +1025,7 @@ vendor/lib/libqdp.so
 vendor/lib/libqmi.so
 vendor/lib/libqmiservices.so
 vendor/lib/libvoice-svc.so
+vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so
 
 # Secure
 vendor/lib/libHealthAuthClient.so
