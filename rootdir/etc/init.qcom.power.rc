@@ -73,13 +73,13 @@ on enable-low-power
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load 90
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_rate 20000
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_slack 80000
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/hispeed_freq 1440000
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/hispeed_freq 1516000
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/io_is_busy 0
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_sched_load 1
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads "85 729600:75 960000:80 1094400:85 1267200:90 1440000:95"
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads "85 652800:75 960000:80 1094400:85 1267200:90 1440000:95"
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/min_sample_time 40000
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1516000
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 345600
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 499200
 
     # enable governor for power cluster
     write /sys/devices/system/cpu/cpu4/online 1
@@ -88,12 +88,12 @@ on enable-low-power
     write /sys/devices/system/cpu/cpu4/cpufreq/interactive/go_hispeed_load 90
     write /sys/devices/system/cpu/cpu4/cpufreq/interactive/timer_rate 20000
     write /sys/devices/system/cpu/cpu4/cpufreq/interactive/timer_slack 80000
-    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/hispeed_freq 998400
+    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/hispeed_freq 1209600
     write /sys/devices/system/cpu/cpu4/cpufreq/interactive/io_is_busy 0
     write /sys/devices/system/cpu/cpu4/cpufreq/interactive/use_sched_load 1
-    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/target_loads "80 460800:75 518400:80 806400:85 998400:90 1094400:95"
+    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/target_loads "80 403200:75 533330:80 806400:85 998400:90 1094400:95"
     write /sys/devices/system/cpu/cpu4/cpufreq/interactive/min_sample_time 40000
-    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 249600
+    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 403200
 
     # enable thermal & BCL core_control now
     write /sys/module/msm_thermal/core_control/enabled 1
